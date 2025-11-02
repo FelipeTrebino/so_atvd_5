@@ -1,0 +1,22 @@
+{
+    "processes": [
+        {
+            "id": 1,
+            "name": "Processo A",
+            "arrival": 0,
+            "execution": 5
+        },
+        {
+            "id": 2,
+            "name": "Processo B",
+            "arrival": 1,
+            "execution": 3
+        },
+        {
+            "id": 3,
+            "name": "Processo C",
+            "arrival": 2,
+            "execution": 6
+        }
+    ]
+}
