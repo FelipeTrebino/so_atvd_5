@@ -5,7 +5,7 @@ from time import sleep
 project_root = os.path.dirname(os.path.abspath(__file__))
 process_file_path = os.path.join(project_root, 'processos.json')
 
-def load_processes_from_json(file_path):
+def load_process_from_json(file_path):
     
     with open(file_path, 'r') as file:
         processes = json.load(file).get('processes', [])
@@ -66,7 +66,7 @@ def round_robin_scheduling(processes, quantum = 2, time_unit = 0, print_logs = T
     return completed_processes
 
 if __name__ == "__main__":
-    processes = load_processes_from_json(process_file_path)
+    processes = load_process_from_json(process_file_path)
     print_logs = True  # Defina como False para desativar os logs
     quantum = 2  # Defina o quantum desejado
     time_unit = 0.5  # Define o tempo de simulação para cada unidade de tempo
